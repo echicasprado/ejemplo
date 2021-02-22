@@ -8,6 +8,14 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: blueviolet;
+}
+
+a:visited{
+    color: crimson;
+}
+
 nav ul li a,
 h1 {
     color:chartreuse;
