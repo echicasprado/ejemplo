@@ -37,14 +37,44 @@
     <h1>Mi pagina web</h1>
     <div class="container">
         <div class="row">
-            <div class="col-lg-2"></div>
-            <div class="col-lg-10">
+            <div class="">
                 <form action="">
-                    <label for="name">Name:</label>
-                    <input id="name" type="text">
+                    <div>
+                        <label for="name">Name:</label>
+                        <input name="name" type="text">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="number">Numero:</label>
+                        <input name="number" type="number">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="date">Fecha:</label>
+                        <input name="date" type="date">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="email">Email:</label>
+                        <input name="email" type="email">
+                    </div>
+                    <br>
+                    <div>
+                        <label for="password">Password:</label>
+                        <input name="password" type="password">
+                    </div>
+                    <br>
+                    <div>
+                        <div>
+                            <label for="comentario">Comentario:</label>
+                        </div>
+                        <div>
+                            <textarea name="comentario" id="comentario" cols="30" rows="10"></textarea>
+                        </div>
+                    </div>
+                    <input type="button" value="Enviar">
                 </form>
             </div>
-            <div class="col-lg-2"></div>
         </div>
     </div>
 </body>
