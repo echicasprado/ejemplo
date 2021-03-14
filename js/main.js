@@ -28,8 +28,19 @@ function suma(){
     document.getElementById('result').value = result;
 }
 
+function saludar(){
 
+    let persona = {
+        nombre:document.getElementById('nombrePersona').value,
+        edad: document.getElementById('edadPersona').value,
+        sexo: document.getElementById('sexoPersona').value,
+        soyMayorDeEdad: function(){
+            return (parseInt(this.edad) > 18)? 'Soy mayor de edad':'Soy menor de edad'
+        },
+        saludar: function(){
+            return `Hola mi nombre es: ${this.nombre}\nTengo ${this.edad} de edad\n${this.soyMayorDeEdad()}\nSoy de sexo: ${this.sexo}`;
+        }
+    };
 
-let foo = 42;    // foo ahora es un número
-foo     = 'bar'; // foo ahora es un string
-foo     = true;  // foo ahora es un booleano
+    document.getElementById('showData').value = persona.saludar();
+}

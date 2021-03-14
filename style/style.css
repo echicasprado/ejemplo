@@ -26,3 +26,10 @@ ul{
 #myTitle{
     text-align: center;
 }
+
+.formulario{
+    margin: 100px;
+    margin-top: 0px;
+    text-align: left;
+    color: aquamarine;
+}
